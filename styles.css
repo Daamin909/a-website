@@ -7,15 +7,18 @@
   font-family: "Montserrat", sans-serif;
 }
 body {
+  transform: scale(1.2);
   height: 100vh;
+  overflow: hidden;
 }
 .website {
   display: flex;
+  overflow: hidden;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: black;
-  color: white;
+  color: gray;
   width: 100%;
   height: 100%;
 }
@@ -61,7 +64,7 @@ span {
 }
 .contact {
   background-color: black;
-  color: #fff;
+  color: grey;
   padding: 20px;
   text-align: center;
   display: flex;
@@ -71,6 +74,62 @@ span {
 }
 
 a {
-  color: inherit;
+  color: gray;
   text-decoration: none;
+}
+
+p {
+  text-align: center;
+  color: gray;
+  transition: all 0.3s ease-in-out;
+}
+p:hover {
+  font-weight: 700;
+}
+.about {
+  width: 500px;
+}
+.info {
+  top: 50%;
+  position: absolute;
+  width: 200px;
+  text-align: center;
+  border-radius: 1100%;
+  padding: 30px;
+  color: black;
+  font-size: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.right {
+  right: 10%;
+  transform: rotate(10deg);
+  background-color: lemonchiffon;
+  padding: 30px 20px;
+}
+
+.left {
+  left: 10%;
+  background-color: rebeccapurple;
+  color: white;
+  transform: rotate(-10deg);
+}
+
+.top {
+  top: 20%;
+  left: 10%;
+  transform: rotate(-15deg);
+  background-color: aqua;
+}
+
+.bottom {
+  top: 20%;
+  right: 10%;
+  transform: rotate(15deg);
+  background-color: dodgerblue;
+  color: white;
+}
+
+.info:hover {
+  transform: scale(1.08);
 }
